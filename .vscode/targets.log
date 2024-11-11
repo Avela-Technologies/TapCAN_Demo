@@ -1,0 +1,315 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.82
+# Built for i686-pc-mingw32
+# Copyright (C) 2010  Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Tue Aug 16 11:40:27 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# default
+.SHELLFLAGS := -c
+# makefile
+MAKEFLAGS = Rrqp
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+VISUALGDB_DIR = C:\Program Files (x86)\Sysprogs\VisualGDB\
+# environment
+PLATFORMIO_IDE = 2.5.2
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+HOMEDRIVE = C:
+# automatic
+@F = $(notdir $@)
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile
+CURDIR := c:/Users/dwhansel/Documents/PlatformIO/Projects/TEHCM_Test
+# default
+SHELL := sh.exe
+# environment
+WINDIR = C:\WINDOWS
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+ONEDRIVE = C:\Users\dwhansel\OneDrive
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+# makefile
+MAKEFILE_LIST := 
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# environment
+TMP = C:\Users\dwhansel\AppData\Local\Temp
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PROGRAMDATA = C:\ProgramData
+# environment
+VSCODE_CWD = C:\Users\dwhansel\AppData\Local\Programs\Microsoft VS Code
+# environment
+NO_PROXY = 127.0.0.1
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# environment
+CHOCOLATEYLASTPATHUPDATE = 132558911161419785
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# environment
+USERPROFILE = C:\Users\dwhansel
+# environment
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+NUMBER_OF_PROCESSORS = 8
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine archives
+# automatic
+%F = $(notdir $%)
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_11768_ELXCVXAYDCRJQCZP
+# environment
+COMPUTERNAME = DESKTOP-B8VH1LM
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERNAME = dwhansel
+# environment
+PUBLIC = C:\Users\Public
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\dwhansel\AppData\Roaming\Code\CachedData\da76f93349a72022ca4670c1b84860304616aaa2
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# environment
+LOGONSERVER = \\DESKTOP-B8VH1LM
+# environment
+WRSD_LICENSE_FILE = c:\windriver\license
+# environment
+ONEDRIVECONSUMER = C:\Users\dwhansel\OneDrive
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+USERDOMAIN = DESKTOP-B8VH1LM
+# environment
+MAKELEVEL := 0
+# environment
+PLATFORMIO_PATH = C:\Python39\Scripts\;C:\Python39\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\SysGCC\powerpc-eabi\bin;c:\cygwin64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;c:\windriver\diab\5.9.0.0\WIN32\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\PuTTY\;C:\Program Files\Nordic Semiconductor\nrf-command-line-tools\bin\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Python39\Scripts\;C:\Python39\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\SysGCC\powerpc-eabi\bin;c:\cygwin64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;c:\windriver\diab\5.9.0.0\WIN32\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\PuTTY\;C:\Program Files\Nordic Semiconductor\nrf-command-line-tools\bin\;C:\ProgramData\chocolatey\bin;C:\Program Files\CMake\bin;C:\Program Files\Git\cmd;C:\Users\dwhansel\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\dwhansel\AppData\Local\Programs\Python\Python37\;C:\Users\dwhansel\AppData\Local\Microsoft\WindowsApps;C:\Users\dwhansel\AppData\Local\Program;C:\Users\dwhansel\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\dwhansel\.dotnet\tools;C:\Python39\Scripts\;C:\Python39\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\SysGCC\powerpc-eabi\bin;c:\cygwin64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;c:\windriver\diab\5.9.0.0\WIN32\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\PuTTY\;C:\Program Files\Nordic Semiconductor\nrf-command-line-tools\bin\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Python39\Scripts\;C:\Python39\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\SysGCC\powerpc-eabi\bin;c:\cygwin64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;c:\windriver\diab\5.9.0.0\WIN32\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\PuTTY\;C:\Program Files\Nordic Semiconductor\nrf-command-line-tools\bin\;C:\ProgramData\chocolatey\bin;C:\Program Files\CMake\bin;C:\Program Files\Git\cmd;C:\Users\dwhansel\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\dwhansel\AppData\Local\Programs\Python\Python37\;C:\Users\dwhansel\AppData\Local\Microsoft\WindowsApps;C:\Users\dwhansel\AppData\Local\Program;C:\Users\dwhansel\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\dwhansel\.dotnet\tools
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+PATH = C:\Python39\Scripts\;C:\Python39\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\SysGCC\powerpc-eabi\bin;c:\cygwin64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;c:\windriver\diab\5.9.0.0\WIN32\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\PuTTY\;C:\Program Files\Nordic Semiconductor\nrf-command-line-tools\bin\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Python39\Scripts\;C:\Python39\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\SysGCC\powerpc-eabi\bin;c:\cygwin64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;c:\windriver\diab\5.9.0.0\WIN32\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\PuTTY\;C:\Program Files\Nordic Semiconductor\nrf-command-line-tools\bin\;C:\ProgramData\chocolatey\bin;C:\Program Files\CMake\bin;C:\Program Files\Git\cmd;C:\Users\dwhansel\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\dwhansel\AppData\Local\Programs\Python\Python37\;C:\Users\dwhansel\AppData\Local\Microsoft\WindowsApps;C:\Users\dwhansel\AppData\Local\Program;C:\Users\dwhansel\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\dwhansel\.dotnet\tools
+# environment
+OMP_NUM_THREADS = 8
+# default
+MAKE_VERSION := 3.82
+# makefile
+.DEFAULT_GOAL := 
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LOCALAPPDATA = C:\Users\dwhansel\AppData\Local
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make.exe
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 10, GenuineIntel
+# environment
+OS = Windows_NT
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\cc4a9d639361ed000412df5147f306a9-1.70.0-main-sock
+# environment
+HOMEPATH = \Users\dwhansel
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+PROMPT = $P$G
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+SYSTEMROOT = C:\WINDOWS
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+APPDATA = C:\Users\dwhansel\AppData\Roaming
+# environment
+__COMPAT_LAYER = DetectorsAppHealth
+# environment
+TEMP = C:\Users\dwhansel\AppData\Local\Temp
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# default
+MAKEFILES := 
+# environment
+IDF_TOOLS_PATH = C:\Users\dwhansel\.espressif
+# automatic
+<F = $(notdir $<)
+# environment
+PLATFORMIO_CALLER = vscode
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+SYSTEMDRIVE = C:
+# environment
+SESSIONNAME = Console
+# environment
+PROCESSOR_REVISION = 8e0a
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = C
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+VSCODE_PID = 11768
+# environment
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-B8VH1LM
+# variable set hash-table stats:
+# Load=97/1024=9%, Rehash=0, Collisions=14/112=12%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# \Program Files\Git\cmd;C: could not be stat'd.
+# \Users\dwhansel\AppData\Local\Programs\Microsoft VS Code\bin;C: could not be stat'd.
+# \WINDOWS\System32\OpenSSH\;C: could not be stat'd.
+# \Users\dwhansel\AppData\Local\Programs\Python\Python37\;C: could not be stat'd.
+# \Users\dwhansel\AppData\Local\Programs\Python\Python37\Scripts\;C: could not be stat'd.
+# . (key c:/Users/dwhansel/Documents/PlatformIO/Projects/TEHCM_Test, mtime 1660522957): 14 files, no impossibilities.
+# \WINDOWS;C: could not be stat'd.
+# \ProgramData\chocolatey\bin;C: could not be stat'd.
+# \Program Files\Intel\Intel(R) Management Engine Components\DAL;C: could not be stat'd.
+# C: could not be stat'd.
+# \cygwin64\bin;C: could not be stat'd.
+# \SysGCC\powerpc-eabi\bin;c: could not be stat'd.
+# \WINDOWS\System32\Wbem;C: could not be stat'd.
+# \Python39\;C: could not be stat'd.
+# \Users\dwhansel\.dotnet\tools: could not be stat'd.
+# \Python39\Scripts\;C: could not be stat'd.
+# \Program Files\Microsoft SQL Server\130\Tools\Binn\;c: could not be stat'd.
+# \Program Files\dotnet\;C: could not be stat'd.
+# \Program Files\Nordic Semiconductor\nrf-command-line-tools\bin\;C: could not be stat'd.
+# \Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C: could not be stat'd.
+# \Program Files\PuTTY\;C: could not be stat'd.
+# \windriver\diab\5.9.0.0\WIN32\bin;C: could not be stat'd.
+# \WINDOWS\system32;C: could not be stat'd.
+# \ProgramData\Oracle\Java\javapath;C: could not be stat'd.
+# \Program Files\CMake\bin;C: could not be stat'd.
+# \Program Files\Intel\WiFi\bin\;C: could not be stat'd.
+# \Program Files\Common Files\Intel\WirelessCommon\;C: could not be stat'd.
+# \WINDOWS\System32\WindowsPowerShell\v1.0\;C: could not be stat'd.
+# \Users\dwhansel\AppData\Local\Microsoft\WindowsApps;C: could not be stat'd.
+# \Users\dwhansel\AppData\Local\Program;C: could not be stat'd.
+# \Program Files (x86)\Common Files\Oracle\Java\javapath;C: could not be stat'd.
+
+# 14 files, no impossibilities in 31 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+GNUmakefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# files hash-table stats:
+# Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 0 / lookups = 52 / hits = 52
+# # of strcache buffers: 1 (* 8176 B/buffer = 8176 B)
+# strcache used: total = 0 (1272) / max = 0 / min = 8176 / avg = 0
+# strcache free: total = 0 (6904) / max = 0 / min = 8176 / avg = 0
+
+# strcache hash-table stats:
+# Load=50/8192=1%, Rehash=0, Collisions=1/52=2%
+# Finished Make data base on Tue Aug 16 11:40:27 2022
+
+ 
+make.exe: *** No rule to make target `all'.  Stop.
+
