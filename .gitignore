@@ -1,0 +1,4 @@
+.pio/build
+.pio/libdeps
+.vscode
+test
