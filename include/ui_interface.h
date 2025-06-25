@@ -4,7 +4,7 @@
 #include <Arduino.h>
 #include "lvgl.h"
 
-extern void ui_user_code_init();
+extern void ui_custom_code_init();
 extern void label_updt(lv_timer_t*);
 
 #endif

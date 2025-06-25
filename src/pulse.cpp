@@ -1,6 +1,10 @@
 #include "pulse.h"
 #include "TapCAN.h"
 #include "ui.h"
+#ifdef CONFIG_EEZ
+#include "actions.h"
+#include "screens.h"
+#endif
 
 uint32_t pulseCount;
 uint32_t PrevReadTime;
@@ -13,6 +17,14 @@ uint32_t pwm_out_freq;
 #define MAX_PWM_OUT_DC 100
 #define MIN_PWM_OUT_FREQ 100
 #define MAX_PWM_OUT_FREQ 9000
+
+#ifdef CONFIG_EEZ
+    #define PWMOutDC objects.val_pwm_out_dc
+    #define PWMOutFreq objects.val_pwm_out_freq
+#elif CONFIG_SQUARELINE
+    #define PWMOutDC ui_valPWMOutDC
+    #define PWMOutFreq ui_valPWMOutFreq
+#endif
 
 
 void IRAM_ATTR Pulse_ISR(); 
@@ -28,9 +40,9 @@ void fnPulse_Init()
     //use ESP32 ledc functions for PWM output
     pwm_out_dc_pct=50; //initialize DC to 50%
     pwm_out_dc=(pwm_out_dc_pct/100.0)*256;
-    lv_label_set_text_fmt(ui_valPWMOutDC,"%d",pwm_out_dc_pct);
+    lv_label_set_text_fmt(PWMOutDC,"%d",pwm_out_dc_pct);
     pwm_out_freq=1000; //initialize Frequency to 1000 Hz
-    lv_label_set_text_fmt(ui_valPWMOutFreq,"%d",pwm_out_freq);
+    lv_label_set_text_fmt(PWMOutFreq,"%d",pwm_out_freq);
     
     ledcSetup(PWM_OUT_CHANNEL, pwm_out_freq, 8);  // channel 0, 8-bit duty cycle resolution 
     ledcAttachPin(PWM_OUT_PIN, PWM_OUT_CHANNEL);    
@@ -70,7 +82,7 @@ void SetPWMOutFreq(int8_t mDrtcn)
     {
         pwm_out_freq += 100;
     }
-    lv_label_set_text_fmt(ui_valPWMOutFreq,"%d",pwm_out_freq);
+    lv_label_set_text_fmt(PWMOutFreq,"%d",pwm_out_freq);
     if(ledcChangeFrequency(PWM_OUT_CHANNEL,pwm_out_freq,PWM_OUT_DC_RES) != pwm_out_freq)
     {
         #if DEBUG_PULSE
@@ -89,7 +101,29 @@ void SetPWMOutDC(int8_t mDrtcn)
     {
         pwm_out_dc_pct += 10;
     }
-    lv_label_set_text_fmt(ui_valPWMOutDC,"%d",pwm_out_dc_pct);
+    lv_label_set_text_fmt(PWMOutDC,"%d",pwm_out_dc_pct);
     pwm_out_dc=(pwm_out_dc_pct/100.0)*256;
     ledcWrite(PWM_OUT_CHANNEL, pwm_out_dc); 
 }
+
+#ifdef CONFIG_EEZ
+void action_btn_dc_up_clk(lv_event_t * e)
+{
+	SetPWMOutDC(1);
+}
+
+void action_btn_dc_dwn_clk(lv_event_t * e)
+{
+	SetPWMOutDC(0);
+}
+
+void action_btn_freq_up_clk(lv_event_t * e)
+{
+	SetPWMOutFreq(1);
+}
+
+void action_btn_freq_dwn_clk(lv_event_t * e)
+{
+	SetPWMOutFreq(0);
+}
+#endif

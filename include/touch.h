@@ -5,10 +5,7 @@
 extern "C" {
 #endif
 
-#include "lvgl.h"
-
-extern void fnCTP_Init();
-extern void my_input_read(lv_indev_drv_t*, lv_indev_data_t*);
+extern void touchscreen_init();
 
 #ifdef __cplusplus
 }

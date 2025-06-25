@@ -1,5 +1,9 @@
 #include "anlg_out.h"
 #include <Wire.h>
+#ifdef CONFIG_EEZ
+#include "actions.h"
+#include "screens.h"
+#endif
 
 #define MCP47CVB_ADDR             0x61 ///< Default i2c address
 #define MCP47CVB_WRITE_DAC0       0x00    ///< Writes data to DAC 0
@@ -110,3 +114,14 @@ bool MCP47CVB::WakeUp()
       return (false); //Error: Sensor did not ack
 	return(true);
 }
+
+#ifdef CONFIG_EEZ
+void action_updt_dac_val(lv_event_t * e)
+{
+	lv_obj_t * slider = lv_event_get_target(e);
+    uint8_t slider_val = (uint8_t)lv_slider_get_value(slider);    
+	float fVOut = slider_val/25.5;
+	lv_label_set_text_fmt(objects.val_vout,"%.1f",fVOut);    
+	set_DAC_val(slider_val);
+}
+#endif

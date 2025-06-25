@@ -4,6 +4,11 @@
 #include "gpio_ext.h"
 #include <mcp_can.h>
 
+#ifdef CONFIG_EEZ
+#include "actions.h"
+#include "screens.h"
+#endif
+
 SPIClass SPI_CAN(HSPI);
 static MCP_CAN CAN0(&SPI_CAN,15);
 
@@ -75,3 +80,25 @@ void fnCAN_Rx()
         }
     }
 }
+
+#ifdef CONFIG_EEZ
+void action_btn_rx_can_msg(lv_event_t * e)
+{
+    if(bCAN_RxActv)
+	{
+		lv_label_set_text(objects.lbl_rx_btn_txt, "Start");
+		bCAN_RxActv=false;
+	}
+	else
+	{
+		lv_label_set_text(objects.lbl_rx_btn_txt, "Stop");
+		bCAN_RxActv=true;
+	}
+	fnCAN_cntrl_Rx();
+}
+
+void action_btn_send_can_msg(lv_event_t * e)
+{
+    fnCAN_Tx();
+}
+#endif
