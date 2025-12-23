@@ -240,6 +240,10 @@ void create_screen_scrn_home() {
     objects.scrn_home = obj;
     lv_obj_set_pos(obj, 0, 0);
     lv_obj_set_size(obj, 320, 480);
+    lv_obj_set_scrollbar_mode(obj, LV_SCROLLBAR_MODE_OFF);
+    lv_obj_set_scroll_dir(obj, LV_DIR_NONE);
+    lv_obj_set_scroll_snap_x(obj, LV_SCROLL_SNAP_NONE);
+    lv_obj_set_scroll_snap_y(obj, LV_SCROLL_SNAP_NONE);
     {
         lv_obj_t *parent_obj = obj;
         {
@@ -364,6 +368,10 @@ void create_screen_scrn_can() {
     objects.scrn_can = obj;
     lv_obj_set_pos(obj, 0, 0);
     lv_obj_set_size(obj, 320, 480);
+    lv_obj_set_scrollbar_mode(obj, LV_SCROLLBAR_MODE_OFF);
+    lv_obj_set_scroll_dir(obj, LV_DIR_NONE);
+    lv_obj_set_scroll_snap_x(obj, LV_SCROLL_SNAP_NONE);
+    lv_obj_set_scroll_snap_y(obj, LV_SCROLL_SNAP_NONE);
     {
         lv_obj_t *parent_obj = obj;
         {
@@ -567,6 +575,10 @@ void create_screen_scrn_gpio() {
     objects.scrn_gpio = obj;
     lv_obj_set_pos(obj, 0, 0);
     lv_obj_set_size(obj, 320, 480);
+    lv_obj_set_scrollbar_mode(obj, LV_SCROLLBAR_MODE_OFF);
+    lv_obj_set_scroll_dir(obj, LV_DIR_NONE);
+    lv_obj_set_scroll_snap_x(obj, LV_SCROLL_SNAP_NONE);
+    lv_obj_set_scroll_snap_y(obj, LV_SCROLL_SNAP_NONE);
     lv_obj_set_style_bg_color(obj, lv_color_hex(0xff000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     {
         lv_obj_t *parent_obj = obj;
@@ -727,6 +739,10 @@ void create_screen_scrn_analog() {
     objects.scrn_analog = obj;
     lv_obj_set_pos(obj, 0, 0);
     lv_obj_set_size(obj, 320, 480);
+    lv_obj_set_scrollbar_mode(obj, LV_SCROLLBAR_MODE_OFF);
+    lv_obj_set_scroll_dir(obj, LV_DIR_NONE);
+    lv_obj_set_scroll_snap_x(obj, LV_SCROLL_SNAP_NONE);
+    lv_obj_set_scroll_snap_y(obj, LV_SCROLL_SNAP_NONE);
     {
         lv_obj_t *parent_obj = obj;
         {
@@ -855,6 +871,10 @@ void create_screen_scrn_pulse() {
     objects.scrn_pulse = obj;
     lv_obj_set_pos(obj, 0, 0);
     lv_obj_set_size(obj, 320, 480);
+    lv_obj_set_scrollbar_mode(obj, LV_SCROLLBAR_MODE_OFF);
+    lv_obj_set_scroll_dir(obj, LV_DIR_NONE);
+    lv_obj_set_scroll_snap_x(obj, LV_SCROLL_SNAP_NONE);
+    lv_obj_set_scroll_snap_y(obj, LV_SCROLL_SNAP_NONE);
     {
         lv_obj_t *parent_obj = obj;
         {

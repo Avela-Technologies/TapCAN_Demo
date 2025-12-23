@@ -1,7 +1,6 @@
 {
   "navigation": {
-    "selectedUserPageObject": "[..\\..\\..\\..\\eez-projects\\TapCAN_Demo\\TapCAN_Demo.eez-project]:/userPages/0",
-    "selectedBitmapObject": "[..\\..\\..\\..\\eez-projects\\TapCAN_Demo\\TapCAN_Demo.eez-project]:/bitmaps/1",
+    "selectedUserPageObject": "[TapCAN_Demo.eez-project]:/userPages/0",
     "subnavigationSelectedItems": {
       "variables-tab/sub-navigation/selected-item": "Actions"
     }
@@ -125,6 +124,7 @@
                   "type": "tabset",
                   "id": "#55949089-fe76-4e45-b2ce-ad07f647c448",
                   "weight": 1,
+                  "selected": 1,
                   "enableClose": false,
                   "children": [
                     {
@@ -167,7 +167,8 @@
                       "enableClose": false,
                       "icon": "svg:hierarchy"
                     }
-                  ]
+                  ],
+                  "active": true
                 },
                 {
                   "type": "tabset",
@@ -196,23 +197,11 @@
               "children": [
                 {
                   "type": "tab",
-                  "id": "#a8a2366a-32d8-4996-8767-76dc0530713e",
-                  "name": "Settings",
-                  "component": "editor",
-                  "config": {
-                    "objectPath": "[..\\..\\..\\..\\eez-projects\\TapCAN_Demo\\TapCAN_Demo.eez-project]:/settings",
-                    "subObjectPath": "[..\\..\\..\\..\\eez-projects\\TapCAN_Demo\\TapCAN_Demo.eez-project]:/settings",
-                    "permanent": false
-                  },
-                  "icon": "material:settings"
-                },
-                {
-                  "type": "tab",
-                  "id": "#d0800577-f60f-47f0-99b8-468009299e39",
+                  "id": "#97ddc636-0bd5-4e97-b8b7-826cfd1cf73f",
                   "name": "scrnHome",
                   "component": "editor",
                   "config": {
-                    "objectPath": "[..\\..\\..\\..\\eez-projects\\TapCAN_Demo\\TapCAN_Demo.eez-project]:/userPages/0",
+                    "objectPath": "[TapCAN_Demo.eez-project]:/userPages/0",
                     "permanent": false
                   },
                   "icon": "svg:page"
@@ -237,8 +226,7 @@
                       "enableClose": false,
                       "icon": "svg:properties"
                     }
-                  ],
-                  "active": true
+                  ]
                 },
                 {
                   "type": "tabset",
@@ -995,9 +983,7 @@
     "[TapCAN_Demo.eez-project]:/userPages/0[flow-state]": {
       "selection": {
         "0": {
-          "1": {
-            "$selected": true
-          }
+          "1": {}
         }
       },
       "transform": {

@@ -75,17 +75,17 @@ void set_gpo_CANTerm(uint8_t x)
 #ifdef CONFIG_EEZ
 void action_swt_gpo3_toggled(lv_event_t *e) 
 {
-    set_gpo_beep(lv_obj_has_state(objects.swt_gpo3,LV_STATE_CHECKED));    
+    set_gpo_3(lv_obj_has_state(objects.swt_gpo3,LV_STATE_CHECKED));    
 }
 
 void action_swt_gpo4_toggled(lv_event_t *e) 
 {
-    set_gpo_beep(lv_obj_has_state(objects.swt_gpo4,LV_STATE_CHECKED)); 
+    set_gpo_4(lv_obj_has_state(objects.swt_gpo4,LV_STATE_CHECKED)); 
 }
 
 void action_swt_gpo5_toggled(lv_event_t *e) 
 {
-    set_gpo_beep(lv_obj_has_state(objects.swt_gpo5,LV_STATE_CHECKED)); 
+    set_gpo_5(lv_obj_has_state(objects.swt_gpo5,LV_STATE_CHECKED)); 
 }
 
 void action_swt_beep_toggled(lv_event_t *e) 
@@ -95,6 +95,6 @@ void action_swt_beep_toggled(lv_event_t *e)
 
 void action_swt_can_term_toggled(lv_event_t *e) 
 {
-    set_gpo_beep(lv_obj_has_state(objects.swt_can_term,LV_STATE_CHECKED)); 
+    set_gpo_CANTerm(lv_obj_has_state(objects.swt_can_term,LV_STATE_CHECKED)); 
 }
 #endif
